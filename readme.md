@@ -7,7 +7,7 @@ This framework provides basic functionality.
 The easiest way to load this framework into your app is adding it via Composer.
 
 ```shell
-composer require xmgr/core
+composer require xmgr/core:dev-main
 ```
 
 ## Installation without composer
