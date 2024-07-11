@@ -1,0 +1,72 @@
+.container > div, .container > section, .container > article, .container > fieldset {
+    /*padding : 1rem;*/
+}
+
+.container > div:not(:first-child), .container > section:not(:first-child), .container > article:not(:first-child), .container > fieldset:not(:first-child) {
+    /*margin-top : 1rem;*/
+}
+
+.container > div:not(:last-child), .container > section:not(:last-child), .container > article:not(:last-child), .container > fieldset:not(:last-child) {
+    /*margin-bottom : 1rem;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom : 0.5rem;
+}
+
+.row > div {
+    padding : 0.5rem;
+}
+
+p {
+    margin-top     : 0.25rem;
+    margin-bottom  : 0.25rem;
+    padding-top    : 0.25rem;
+    padding-bottom : 0.25rem;
+}
+
+.tmp:empty {
+    color   : #cc0022 !important;
+    outline : 2px solid #cc0022;
+}
+
+.tmp:optional {
+    /* input, select or textarea that is not required */
+}
+
+.tmp::placeholder-shown {
+
+}
+
+.tmp:valid {
+    /* input, select or textarea that is valid */
+}
+
+.tmp::file-selector-button {
+
+}
+
+.tmp::first-letter {
+
+}
+
+.tmp::first-line {
+
+}
+
+.tmp::marker {
+    /* ul li */
+    content : '#';
+}
+
+.tmp span::selection {
+    /* Selected text */
+    background-color : rgba(0, 0, 0, 0.8);
+    color            : var(--color-white);
+}
+
+.container.contents > article,
+.container.contents > .row > div,
+.container.contents > div:not(.row) {
+    /*padding : 1.5rem;*/
+}

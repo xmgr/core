@@ -1,0 +1,142 @@
+:root {
+    
+    --color-black            : #000000;
+    --color-black-t1         : rgba(0, 0, 0, 0.1);
+    --color-black-t2         : rgba(0, 0, 0, 0.25);
+    --color-black-t7         : rgba(0, 0, 0, 0.72);
+    --color-black-t8         : rgba(0, 0, 0, 0.8);
+    --color-black-alpha      : rgba(0, 0, 0, 0.5);
+    --color-black-decent     : rgba(0, 0, 0, 0.25);
+    --color-black2           : #111111;
+    --color-black3           : #222222;
+    --color-dark-gray        : #848a8c;
+    --color-dark             : var(--color-black-t7);
+    --color-very-dark-gray   : #333333;
+    --color-gray             : #a5a9ab;
+    --color-light-gray       : #d7d7d8;
+    --color-light            : #f4f4f4;
+    --color-white            : #ffffff;
+    --color-white-alpha      : rgba(255, 255, 255, 0.5);
+    --color-white-decent     : rgba(255, 255, 255, 0.25);
+    
+    --color-primary          : #0085ad;
+    --color-secondary        : #ffc168;
+    --color-tertiary         : #7fbb00;
+    
+    /* Colors */
+    --color-dark-red         : #e4002b;
+    --color-dark-red1        : #cb202d;
+    --color-dark-red2        : #c63527;
+    --color-error            : #fd5c63;
+    --color-danger           : var(--color-error);
+    --color-red2             : #e56a54;
+    --color-red3             : #ff967d;
+    
+    --color-dark-blue        : #35465c;
+    --color-blue             : #4298b5;
+    --color-blue2            : #0079bf;
+    --color-blue3            : #79b9e7;
+    --color-info             : #0078e7;
+    --color-info2            : #1f8dd6;
+    
+    --color-dark-purple      : #77216f;
+    --color-purple           : #b83c82;
+    --color-violet           : #7552cc;
+    --color-violet2          : #9146ff;
+    --color-violet3          : #c377e0;
+    --color-pink             : #ff78cb;
+    --color-bright-violet    : #e2d4e7;
+    
+    --color-success          : #0abf53;
+    --color-success-mat      : #5eb95e;
+    --color-green            : #2c9f45;
+    --color-green2           : #6fbc6d;
+    --color-green3           : #70b500;
+    --color-green4           : #98ce1e;
+    --color-green5           : #2ecc71;
+    
+    --color-warning          : #fbb034;
+    --color-orange           : #eb5424;
+    --color-orange2          : #bf5700;
+    --color-orange3          : #ff9600;
+    
+    --color-yellow           : #ffed00;
+    --color-yellow3          : #ffbd00;
+    --color-yellow2          : #fee75c;
+    
+    /* Breakpoints */
+    /* Mobile-friendly */
+    --break-max-width-xl     : 1399.98px;
+    --break-max-width-lg     : 1199.98px;
+    --break-max-width-md     : 991.98px;
+    --break-max-width-sm     : 767.98px;
+    --break-max-width-xs     : 575.98px;
+    /* Mobile-first */
+    --break-min-width-xs     : 576px;
+    --break-min-width-sm     : 768px;
+    --break-min-width-md     : 992px;
+    --break-min-width-lg     : 1200px;
+    --break-min-width-xl     : 1400px;
+    
+    /* Borders */
+    --border-radius          : 0.25rem;
+    --default-border         : 1px solid var(--color-black-decent);
+    --border-color           : var(--color-black-decent);
+    
+    /* Typography */
+    --font-family            : 'Segoe UI', Calibri, Helvetica, Tahoma, Verdana, 'Arial', sans-serif;
+    --font-code              : Monospaced, Consolas, "Lucida Console", "Courier New", sans-serif;
+    --font-size              : 14px;
+    --font-size-sm           : 0.8rem;
+    --font-size-xs           : 0.72rem;
+    --font-size-xxs          : 0.64rem;
+    --font-weight            : normal;
+    --font-weight-heading    : normal;
+    --line-height            : 1.4;
+    --text-color             : var(--color-black3);
+    --link-color             : var(--color-primary);
+    
+    /* Grid */
+    --grid-gap               : 0.75rem;
+    --grid-gap-xs            : 0.25rem;
+    --grid-gap-sm            : 0.5rem;
+    --grid-gap-1             : 1rem;
+    --grid-padding           : 4px;
+    
+    /* Input parameters */
+    
+    --textarea-min-height    : 3rem;
+    
+    /* Paddings */
+    
+    --input-padding          : 0.5rem 0.4rem;
+    --default-padding        : 1rem;
+    --default-padding-sm     : 0.5rem;
+    
+    /* Margins */
+    
+    --default-margin         : 1rem;
+    --default-margin-sm      : 0.5rem;
+    
+    /* Spacing */
+    
+    --space                  : 1rem;
+    
+    /* Tables */
+    
+    --table-cell-padding     : 0.3rem 0.4rem;
+    --table-cell-padding-sm  : 0.25rem;
+    --table-cell-padding-xs  : 0.1rem;
+    
+    --table-head-font-weight : bold;
+    --table-foot-font-weight : bold;
+    
+    /* Containers / layout */
+    
+    --container-width        : 1140px;
+    
+    /* Images */
+    
+    --size-thumbnail         : 180px;
+    
+}

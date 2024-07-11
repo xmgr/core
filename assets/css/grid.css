@@ -1,0 +1,90 @@
+.d-grid {
+    display : grid;
+}
+
+.grid, .row {
+    display               : grid;
+    grid-template-columns : repeat(12, 1fr);
+    overflow              : hidden;
+    gap                   : var(--grid-gap);
+    padding               : var(--grid-padding);
+}
+
+.grid.gap, .row.gap {
+    gap : var(--grid-gap);
+}
+
+.grid.no-gap, .row.no-gap, grid.dense {
+    gap : 0;
+}
+
+.grid.inner-gap, .row.inner-gap {
+    padding : var(--grid-gap);
+}
+
+.inner-gap .row {
+    padding : var(--grid-gap);
+}
+
+.row.single {
+    grid-template-columns : 1fr;
+}
+
+.row > div{
+    overflow: hidden;
+}
+
+.grid.evenly,.row.evenly {
+    grid-template-columns : repeat(auto-fit, minmax(0, 1fr));
+}
+
+/* Golden ratio */
+.row.golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+.row.golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+
+/* Individual grid sizes */
+.row.grid-1{grid-template-columns: 1fr;}
+.row.grid-2{grid-template-columns: repeat(2, 1fr);}
+.row.grid-3{grid-template-columns: repeat(3, 1fr);}
+.row.grid-4{grid-template-columns: repeat(4, 1fr);}
+.row.grid-5{grid-template-columns: repeat(5, 1fr);}
+.row.grid-6{grid-template-columns: repeat(6, 1fr);}
+.row.grid-7{grid-template-columns: repeat(7, 1fr);}
+.row.grid-8{grid-template-columns: repeat(8, 1fr);}
+.row.grid-9{grid-template-columns: repeat(9, 1fr);}
+.row.grid-10{grid-template-columns:repeat(10, 1fr);}
+.row.grid-12{grid-template-columns:repeat(12, 1fr);}
+.row.grid-16{grid-template-columns:repeat(16, 1fr);}
+.row.grid-20{grid-template-columns:repeat(20, 1fr);}
+.row.grid-24{grid-template-columns:repeat(24, 1fr);}
+.row.grid-32{grid-template-columns:repeat(32, 1fr);}
+.row.grid-40{grid-template-columns:repeat(40, 1fr);}
+.row.grid-48{grid-template-columns:repeat(48, 1fr);}
+.row.grid-80{grid-template-columns:repeat(80, 1fr);}
+.row.grid-100{grid-template-columns:repeat(100, 1fr);}
+
+/* Grid presets */
+.row.grid-2-8{grid-template-columns: 2fr 8fr;}
+.row.grid-8-2{grid-template-columns: 8fr 2fr;}
+.row.grid-3-6{grid-template-columns: 3fr 6fr;}
+.row.grid-6-3{grid-template-columns: 6fr 3fr;}
+.row.grid-3-7{grid-template-columns: 3fr 7fr;}
+.row.grid-7-3{grid-template-columns: 7fr 3fr;}
+.row.grid-4-6{grid-template-columns: 4fr 6fr;}
+.row.grid-6-4{grid-template-columns: 6fr 4fr;}
+.row.grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+.row.grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+.row.grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+
+/* Grid cells */
+.row .col-1{grid-column: span 1;}
+.row .col-2{grid-column: span 2;}
+.row .col-3{grid-column: span 3;}
+.row .col-4{grid-column: span 4;}
+.row .col-5{grid-column: span 5;}
+.row .col-6{grid-column: span 6;}
+.row .col-8{grid-column: span 8;}
+.row .col-10{grid-column: span 10;}
+.row .col-12{grid-column: span 12;}
+
+/* @todo grid cell offset

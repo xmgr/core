@@ -1,0 +1,155 @@
+
+.text-smaller {
+    font-size : 0.75em;
+}
+
+.text-half {
+    font-size : 0.5em;
+}
+
+small,
+.small,
+.text-sm {
+    font-size : var(--font-size-sm);
+}
+
+.text-xs {
+    font-size : var(--font-size-xs);
+}
+
+.text-xxs {
+    font-size : var(--font-size-xxs);
+}
+
+/* ... */
+
+.line-height-1 {
+    line-height : calc(var(--space) * 0.25);
+}
+
+.line-height-2 {
+    line-height : calc(var(--space) * 0.5);
+}
+
+.line-height-3 {
+    line-height : calc(var(--space) * 0.75);
+}
+
+.line-height-4 {
+    line-height : calc(var(--space) * 1);
+}
+
+.line-height-5 {
+    line-height : calc(var(--space) * 1.25);
+}
+
+.line-height-6 {
+    line-height : calc(var(--space) * 1.5);
+}
+
+.line-height-7 {
+    line-height : calc(var(--space) * 1.75);
+}
+
+.line-height-8 {
+    line-height : calc(var(--space) * 2);
+}
+
+.line-height-9 {
+    line-height : calc(var(--space) * 2.5);
+}
+
+.line-height-10 {
+    line-height : calc(var(--space) * 3);
+}
+
+/* Headings */
+
+h1, .h1 {
+    font-size : 2.5rem;
+}
+
+h2, .h2 {
+    font-size : 2rem;
+}
+
+h3, .h3 {
+    font-size : 1.5rem;
+}
+
+h4, .h4 {
+    font-size : 1.25rem;
+}
+
+h5, .h5 {
+    font-size : 1rem;
+}
+
+h6, .h6 {
+    font-size : 0.9rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    font-weight : var(--font-weight-heading);
+}
+
+/* General text helpers */
+
+
+.underline {
+    text-decoration : underline;
+}
+
+.dotted-underline{
+    text-decoration: underline dotted;
+}
+
+.dashed-underline{
+    text-decoration: underline dashed;
+}
+
+.strong, .bold {
+    font-weight : bold;
+}
+
+.italic {
+    font-style : italic;
+}
+
+.uppercase {
+    text-transform : uppercase;
+}
+
+.lowercase {
+    text-transform : lowercase;
+}
+
+.capitalize {
+    text-transform : capitalize;
+}
+
+.line-through,
+.strikethrough {
+    text-decoration : line-through;
+}
+
+mark{
+    background-color: #ffcc2f;
+}
+
+.text-muted {
+    cursor  : default;
+    opacity : 0.5;
+}
+
+abbr{
+    text-decoration: underline dotted;
+}
+
+.full-opacity{opacity:1;}
+.barely-visible{opacity:0.1;}
+.little-opacity{opacity:0.25;}
+.transparent{opacity:0.5;}
+.decent-opacity{opacity:0.75;}
+.slightly-transparent{opacity:0.9;}

@@ -1,0 +1,20 @@
+html.rounded input,
+html.rounded textarea,
+html.rounded .btn,
+html.rounded fieldset,
+html.rounded .alert,
+html.rounded .badge,
+html.rounded .dialog,
+html.rounded .breadcrumb,
+html.rounded pre,
+html.rounded code,
+html.rounded select {
+    border-radius : var(--border-radius);
+}
+
+html.force-visual-grid,
+html.visual-grid *:hover {
+    outline          : 1px solid #cc0022;
+    outline-offset   : 1px;
+    background-color : rgba(0, 0, 255, 0.1);
+}

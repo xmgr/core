@@ -1,0 +1,340 @@
+* {
+    box-sizing : border-box;
+    margin     : 0;
+    padding    : 0;
+}
+
+*::before, *::after {
+    box-sizing : border-box;
+}
+
+:root {
+    position : relative;
+}
+
+body {
+    margin           : 0;
+    padding          : 0;
+    line-height      : var(--line-height);
+    font-family      : var(--font-family);
+    font-size        : var(--font-size);
+    background-color : var(--color-white);
+    color            : var(--text-color);
+}
+
+div, p, table, span, main, article, section {
+    max-width : 100%;
+}
+
+a {
+    text-decoration : underline;
+    color           : var(--link-color);
+    overflow        : hidden;
+}
+
+/* -- */
+
+.d-block {
+    display : block;
+}
+
+.d-inline-block {
+    display : inline-block;
+}
+
+.d-inline {
+    display : inline;
+}
+
+/* Disable elements */
+
+.disabled, [disabled] {
+    pointer-events : none !important;
+    opacity        : 0.5 !important;
+}
+
+/* Hide elements */
+
+.hide,
+.d-none,
+.hidden,
+[hidden] {
+    display : none !important;
+}
+
+.invisible {
+    visibility : hidden !important;
+    opacity    : 0;
+}
+
+/* Floating */
+
+.float-left {
+    float : left;
+}
+
+.float-right {
+    float : right;
+}
+
+.clearfix {
+    float : none;
+    clear : both;
+}
+
+/* Text alignment */
+
+.text-left {
+    text-align : left;
+}
+
+.text-right {
+    text-align : right;
+}
+
+.text-center {
+    text-align : center;
+}
+
+.text-justify {
+    text-align : justify;
+}
+
+.text-justify-all {
+    text-align : justify-all;
+}
+
+/* Borders */
+
+.no-border {
+    border : none !important;
+}
+
+table.borderless, table.borderless tr th, table.borderless tr td {
+    border : none;
+}
+
+.border-top {
+    border-top : var(--default-border);
+}
+
+.border-right {
+    border-right : var(--default-border);
+}
+
+.border-bottom {
+    border-bottom : var(--default-border);
+}
+
+.border-left {
+    border-left : var(--default-border);
+}
+
+/* Text and background colors */
+.text-primary {
+    color : var(--color-primary);
+}
+
+.text-secondary {
+    color : var(--color-secondary);
+}
+
+.bg-primary {
+    background-color : var(--color-primary);
+}
+
+.bg-secondary {
+    background-color : var(--color-secondary);
+}
+
+/* Roundness */
+
+.rounded {
+    border-radius : var(--border-radius);
+}
+
+/* Buttons */
+
+.btn {
+    transition       : background-color 150ms ease;
+    display          : inline-block;
+    padding          : 0.25rem 0.6rem 0.3rem 0.6rem;
+    border           : none;
+    background-color : var(--color-primary);
+    color            : var(--color-white);
+    font-family      : var(--font-family);
+    font-size        : var(--font-size);
+    white-space      : nowrap;
+    cursor           : pointer;
+    text-decoration  : none;
+    text-align       : center;
+    user-select      : none;
+    border           : 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+    background-color : var(--color-danger);
+}
+
+.btn-success {
+    background-color : var(--color-success);
+}
+
+.btn:hover {
+    opacity : 0.84;
+}
+
+.btn.btn-sm, .btn-small {
+    padding : 0.2rem 0.5rem;
+}
+
+.btn.btn-xs {
+    padding : 0.1rem 0.25rem;
+}
+
+/* Button bar */
+
+.buttons {
+    padding-top    : var(--default-padding-sm);
+    padding-bottom : var(--default-padding-sm);
+    margin-top     : var(--default-margin-sm);
+    margin-bottom  : var(--default-margin-sm);
+}
+
+/* Fieldset */
+
+fieldset {
+    padding : 1rem;
+}
+
+fieldset legend {
+    display : inline-block;
+    padding : 0 1rem;
+}
+
+/* nav */
+
+nav {
+
+}
+
+/* pre and code */
+
+code,
+pre,
+.text-monospace,
+.text-monospaced,
+.monospace,
+.monospaced {
+    font-family : var(--font-code);
+}
+
+pre {
+    padding  : 0.25rem;
+    border   : var(--default-border);
+    overflow : auto;
+}
+
+:not(pre) > code {
+    background-color : rgba(0, 0, 0, 0.05);
+    display          : inline-block;
+    margin           : 1px 0;
+    color            : rgba(0, 0, 0, 0.95);
+    border           : 1px solid rgba(0, 0, 0, 0.2);
+    padding          : 1px 4px 0 4px;
+    font-size        : 0.75rem;
+    font-weight      : 100;
+}
+
+:not(pre) > code:hover {
+    border-color : rgba(0, 0, 0, 0.4);
+}
+
+/* hr line */
+
+hr {
+    border           : none;
+    height           : 1px;
+    color            : var(--border-color);
+    background-color : var(--border-color);
+}
+
+/* Label */
+
+label {
+    display : inline-block;
+}
+
+/* Lists */
+
+ul {
+    list-style-position : inside;
+}
+
+ul.list-unstyled,
+ul.list-unstyled li,
+ul.nostyle,
+ul.nostyle li {
+    list-style : none;
+}
+
+ul.inline li {
+    display : inline-block;
+}
+
+/* Address */
+
+address {
+    font-style : normal;
+}
+
+address p {
+    margin  : 0;
+    padding : 0;
+}
+
+/* Details */
+
+details summary {
+    cursor : pointer;
+}
+
+/* kbd - keyboard input */
+
+kbd {
+    border           : 1px solid #cccccc;
+    padding          : 0.1rem 0.3rem;
+    border-radius    : 0.2rem;
+    background-color : #f7f7f7;
+    box-shadow       : inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Text selection */
+
+.no-text-selection,
+.disable-text-selection {
+    user-select : none;
+}
+
+/* Images */
+
+img {
+    display   : block;
+    width     : 100%;
+    max-width : 100%;
+}
+
+img.thumbnail {
+    width  : var(--size-thumbnail);
+    height : var(--size-thumbnail);
+}
+
+/* General helpers */
+
+.nowrap {
+    white-space : nowrap;
+}
+
+.pre {
+    white-space : pre;
+}

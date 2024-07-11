@@ -1,0 +1,297 @@
+/* XL */
+@media screen and (max-width: 1399.98px) {
+    .row.xl-evenly{grid-template-columns: repeat(auto-fit, minmax(0, 1fr));}
+    
+    /* Grid-Gaps */
+    .row.xl-no-gap{gap: 0;}
+    
+    /* Golden ratio/cut */
+    .row.xl-golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+    .row.xl-golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+    
+    /* Individuelle Einteilungen */
+    .row.xl-grid-2{grid-template-columns: repeat(2, 1fr);}
+    .row.xl-grid-3{grid-template-columns: repeat(3, 1fr);}
+    .row.xl-grid-4{grid-template-columns: repeat(4, 1fr);}
+    .row.xl-grid-5{grid-template-columns: repeat(5, 1fr);}
+    .row.xl-grid-6{grid-template-columns: repeat(6, 1fr);}
+    .row.xl-grid-7{grid-template-columns: repeat(7, 1fr);}
+    .row.xl-grid-8{grid-template-columns: repeat(8, 1fr);}
+    .row.xl-grid-9{grid-template-columns: repeat(9, 1fr);}
+    .row.xl-grid-10{grid-template-columns: repeat(10, 1fr);}
+    .row.xl-grid-12{grid-template-columns: repeat(12, 1fr);}
+    .row.xl-grid-16{grid-template-columns: repeat(16, 1fr);}
+    .row.xl-grid-20{grid-template-columns: repeat(20, 1fr);}
+    .row.xl-grid-24{grid-template-columns:repeat(24, 1fr);}
+    .row.xl-grid-32{grid-template-columns:repeat(32, 1fr);}
+    .row.xl-grid-40{grid-template-columns:repeat(40, 1fr);}
+    .row.xl-grid-48{grid-template-columns:repeat(48, 1fr);}
+    .row.xl-grid-80{grid-template-columns:repeat(80, 1fr);}
+    .row.xl-grid-100{grid-template-columns:repeat(100, 1fr);}
+    
+    /* Grid presets */
+    .row.xl-grid-2-8{grid-template-columns: 2fr 8fr;}
+    .row.xl-grid-8-2{grid-template-columns: 8fr 2fr;}
+    .row.xl-grid-3-6{grid-template-columns: 3fr 6fr;}
+    .row.xl-grid-6-3{grid-template-columns: 6fr 3fr;}
+    .row.xl-grid-3-7{grid-template-columns: 3fr 7fr;}
+    .row.xl-grid-7-3{grid-template-columns: 7fr 3fr;}
+    .row.xl-grid-4-6{grid-template-columns: 4fr 6fr;}
+    .row.xl-grid-6-4{grid-template-columns: 6fr 4fr;}
+    .row.xl-grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+    .row.xl-grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+    .row.xl-grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+    
+    /* Spaltenbreiten individuell bestimmen */
+    .row .col-xl-1{grid-column: span 1;}
+    .row .col-xl-2{grid-column: span 2;}
+    .row .col-xl-3{grid-column: span 3;}
+    .row .col-xl-4{grid-column: span 4;}
+    .row .col-xl-5{grid-column: span 5;}
+    .row .col-xl-6{grid-column: span 6;}
+    .row .col-xl-7{grid-column: span 7;}
+    .row .col-xl-8{grid-column: span 8;}
+    .row .col-xl-9{grid-column: span 9;}
+    .row .col-xl-10{grid-column: span 10;}
+    .row .col-xl-12{grid-column: span 12;}
+    
+    
+}
+
+/* LG */
+@media screen and (max-width: 1199.98px) {
+    .row.lg-evenly{grid-template-columns: repeat(auto-fit, minmax(0, 1fr));}
+    
+    /* Grid-Gaps */
+    .row.lg-gap-0{gap: 0;}
+    .row.lg-gap{gap: var(--grid-gap);}
+    
+    /* Golden ratio/cut */
+    .row.lg-golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+    .row.lg-golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+    
+    /* Individuelle Einteilungen */
+    .row.lg-grid-2{grid-template-columns: repeat(2, 1fr);}
+    .row.lg-grid-3{grid-template-columns: repeat(3, 1fr);}
+    .row.lg-grid-4{grid-template-columns: repeat(4, 1fr);}
+    .row.lg-grid-5{grid-template-columns: repeat(5, 1fr);}
+    .row.lg-grid-6{grid-template-columns: repeat(6, 1fr);}
+    .row.lg-grid-7{grid-template-columns: repeat(7, 1fr);}
+    .row.lg-grid-8{grid-template-columns: repeat(8, 1fr);}
+    .row.lg-grid-9{grid-template-columns: repeat(9, 1fr);}
+    .row.lg-grid-10{grid-template-columns: repeat(10, 1fr);}
+    .row.lg-grid-12{grid-template-columns: repeat(12, 1fr);}
+    .row.lg-grid-16{grid-template-columns: repeat(16, 1fr);}
+    .row.lg-grid-20{grid-template-columns: repeat(20, 1fr);}
+    .row.lg-grid-24{grid-template-columns:repeat(24, 1fr);}
+    .row.lg-grid-32{grid-template-columns:repeat(32, 1fr);}
+    .row.lg-grid-40{grid-template-columns:repeat(40, 1fr);}
+    .row.lg-grid-48{grid-template-columns:repeat(48, 1fr);}
+    .row.lg-grid-80{grid-template-columns:repeat(80, 1fr);}
+    .row.lg-grid-100{grid-template-columns:repeat(100, 1fr);}
+    
+    /* Grid presets */
+    .row.lg-grid-2-8{grid-template-columns: 2fr 8fr;}
+    .row.lg-grid-8-2{grid-template-columns: 8fr 2fr;}
+    .row.lg-grid-3-6{grid-template-columns: 3fr 6fr;}
+    .row.lg-grid-6-3{grid-template-columns: 6fr 3fr;}
+    .row.lg-grid-3-7{grid-template-columns: 3fr 7fr;}
+    .row.lg-grid-7-3{grid-template-columns: 7fr 3fr;}
+    .row.lg-grid-4-6{grid-template-columns: 4fr 6fr;}
+    .row.lg-grid-6-4{grid-template-columns: 6fr 4fr;}
+    .row.lg-grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+    .row.lg-grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+    .row.lg-grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+    
+    /* Spaltenbreiten individuell bestimmen */
+    .row .col-lg-1{grid-column: span 1;}
+    .row .col-lg-2{grid-column: span 2;}
+    .row .col-lg-3{grid-column: span 3;}
+    .row .col-lg-4{grid-column: span 4;}
+    .row .col-lg-5{grid-column: span 5;}
+    .row .col-lg-6{grid-column: span 6;}
+    .row .col-lg-7{grid-column: span 7;}
+    .row .col-lg-8{grid-column: span 8;}
+    .row .col-lg-9{grid-column: span 9;}
+    .row .col-lg-10{grid-column: span 10;}
+    .row .col-lg-12{grid-column: span 12;}
+    
+}
+
+/* MD */
+@media screen and (max-width: 991.98px) {
+    .row.md-evenly{grid-template-columns: repeat(auto-fit, minmax(0, 1fr));}
+    
+    /* Grid-Gaps */
+    .row.md-no-gap{gap: 0;}
+    
+    /* Golden ratio/cut */
+    .row.md-golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+    .row.md-golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+    
+    /* Individuelle Einteilungen */
+    .row.md-grid-1{grid-template-columns: repeat(1, 1fr);}
+    .row.md-grid-2{grid-template-columns: repeat(2, 1fr);}
+    .row.md-grid-3{grid-template-columns: repeat(3, 1fr);}
+    .row.md-grid-4{grid-template-columns: repeat(4, 1fr);}
+    .row.md-grid-5{grid-template-columns: repeat(5, 1fr);}
+    .row.md-grid-6{grid-template-columns: repeat(6, 1fr);}
+    .row.md-grid-7{grid-template-columns: repeat(7, 1fr);}
+    .row.md-grid-8{grid-template-columns: repeat(8, 1fr);}
+    .row.md-grid-9{grid-template-columns: repeat(9, 1fr);}
+    .row.md-grid-10{grid-template-columns: repeat(10, 1fr);}
+    .row.md-grid-12{grid-template-columns: repeat(12, 1fr);}
+    .row.md-grid-16{grid-template-columns: repeat(16, 1fr);}
+    .row.md-grid-20{grid-template-columns: repeat(20, 1fr);}
+    .row.md-grid-24{grid-template-columns:repeat(24, 1fr);}
+    .row.md-grid-32{grid-template-columns:repeat(32, 1fr);}
+    .row.md-grid-40{grid-template-columns:repeat(40, 1fr);}
+    .row.md-grid-48{grid-template-columns:repeat(48, 1fr);}
+    .row.md-grid-80{grid-template-columns:repeat(80, 1fr);}
+    .row.md-grid-100{grid-template-columns:repeat(100, 1fr);}
+    
+    /* Grid presets */
+    .row.md-grid-2-8{grid-template-columns: 2fr 8fr;}
+    .row.md-grid-8-2{grid-template-columns: 8fr 2fr;}
+    .row.md-grid-3-6{grid-template-columns: 3fr 6fr;}
+    .row.md-grid-6-3{grid-template-columns: 6fr 3fr;}
+    .row.md-grid-3-7{grid-template-columns: 3fr 7fr;}
+    .row.md-grid-7-3{grid-template-columns: 7fr 3fr;}
+    .row.md-grid-4-6{grid-template-columns: 4fr 6fr;}
+    .row.md-grid-6-4{grid-template-columns: 6fr 4fr;}
+    .row.md-grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+    .row.md-grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+    .row.md-grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+    
+    /* Spaltenbreiten individuell bestimmen */
+    .row .col-md-1{grid-column: span 1;}
+    .row .col-md-2{grid-column: span 2;}
+    .row .col-md-3{grid-column: span 3;}
+    .row .col-md-4{grid-column: span 4;}
+    .row .col-md-5{grid-column: span 5;}
+    .row .col-md-6{grid-column: span 6;}
+    .row .col-md-7{grid-column: span 7;}
+    .row .col-md-8{grid-column: span 8;}
+    .row .col-md-9{grid-column: span 9;}
+    .row .col-md-10{grid-column: span 10;}
+    .row .col-md-12{grid-column: span 12;}
+    
+}
+
+/* SM */
+@media all and (max-width: 767.98px){
+    .row.sm-evenly{grid-template-columns: repeat(auto-fit, minmax(0, 1fr));}
+    
+    /* Grid-Gaps */
+    .row.sm-no-gap{gap: 0;}
+    
+    /* Golden ratio/cut */
+    .row.sm-grid-golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+    .row.sm-grid-golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+    
+    /* Individuelle Einteilungen */
+    .row.sm-grid-2{grid-template-columns: repeat(2, 1fr);}
+    .row.sm-grid-3{grid-template-columns: repeat(3, 1fr);}
+    .row.sm-grid-4{grid-template-columns: repeat(4, 1fr);}
+    .row.sm-grid-5{grid-template-columns: repeat(5, 1fr);}
+    .row.sm-grid-6{grid-template-columns: repeat(6, 1fr);}
+    .row.sm-grid-7{grid-template-columns: repeat(7, 1fr);}
+    .row.sm-grid-8{grid-template-columns: repeat(8, 1fr);}
+    .row.sm-grid-9{grid-template-columns: repeat(9, 1fr);}
+    .row.sm-grid-10{grid-template-columns: repeat(10, 1fr);}
+    .row.sm-grid-12{grid-template-columns: repeat(12, 1fr);}
+    .row.sm-grid-16{grid-template-columns: repeat(16, 1fr);}
+    .row.sm-grid-20{grid-template-columns: repeat(20, 1fr);}
+    .row.sm-grid-24{grid-template-columns:repeat(24, 1fr);}
+    .row.sm-grid-32{grid-template-columns:repeat(32, 1fr);}
+    .row.sm-grid-40{grid-template-columns:repeat(40, 1fr);}
+    .row.sm-grid-48{grid-template-columns:repeat(48, 1fr);}
+    .row.sm-grid-80{grid-template-columns:repeat(80, 1fr);}
+    .row.sm-grid-100{grid-template-columns:repeat(100, 1fr);}
+    
+    /* Grid presets */
+    .row.sm-grid-2-8{grid-template-columns: 2fr 8fr;}
+    .row.sm-grid-8-2{grid-template-columns: 8fr 2fr;}
+    .row.sm-grid-3-6{grid-template-columns: 3fr 6fr;}
+    .row.sm-grid-6-3{grid-template-columns: 6fr 3fr;}
+    .row.sm-grid-3-7{grid-template-columns: 3fr 7fr;}
+    .row.sm-grid-7-3{grid-template-columns: 7fr 3fr;}
+    .row.sm-grid-4-6{grid-template-columns: 4fr 6fr;}
+    .row.sm-grid-6-4{grid-template-columns: 6fr 4fr;}
+    .row.sm-grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+    .row.sm-grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+    .row.sm-grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+    
+    /* Spaltenbreiten individuell bestimmen */
+    .row .col-sm-1{grid-column: span 1;}
+    .row .col-sm-2{grid-column: span 2;}
+    .row .col-sm-3{grid-column: span 3;}
+    .row .col-sm-4{grid-column: span 4;}
+    .row .col-sm-5{grid-column: span 5;}
+    .row .col-sm-6{grid-column: span 6;}
+    .row .col-sm-7{grid-column: span 7;}
+    .row .col-sm-8{grid-column: span 8;}
+    .row .col-sm-9{grid-column: span 9;}
+    .row .col-sm-10{grid-column: span 10;}
+    .row .col-sm-12{grid-column: span 12;}
+    
+}
+
+/* XS */
+@media screen and (max-width: 575.98px) {
+    .row.xs-evenly{grid-template-columns: repeat(auto-fit, minmax(0, 1fr));}
+    
+    /* Grid-Gaps */
+    .row.xs-no-gap{gap: 0;}
+    
+    /* Golden ratio/cut */
+    .row.xs-golden-ratio.long-right{grid-template-columns: 1fr 1.618fr;}
+    .row.xs-golden-ratio.long-left{grid-template-columns: 1.618fr 1fr;}
+    
+    /* Individuelle Einteilungen */
+    .row.xs-grid-2{grid-template-columns: repeat(2, 1fr);}
+    .row.xs-grid-3{grid-template-columns: repeat(3, 1fr);}
+    .row.xs-grid-4{grid-template-columns: repeat(4, 1fr);}
+    .row.xs-grid-5{grid-template-columns: repeat(5, 1fr);}
+    .row.xs-grid-6{grid-template-columns: repeat(6, 1fr);}
+    .row.xs-grid-7{grid-template-columns: repeat(7, 1fr);}
+    .row.xs-grid-8{grid-template-columns: repeat(8, 1fr);}
+    .row.xs-grid-9{grid-template-columns: repeat(9, 1fr);}
+    .row.xs-grid-10{grid-template-columns: repeat(10, 1fr);}
+    .row.xs-grid-12{grid-template-columns: repeat(12, 1fr);}
+    .row.xs-grid-16{grid-template-columns: repeat(16, 1fr);}
+    .row.xs-grid-20{grid-template-columns: repeat(20, 1fr);}
+    .row.xs-grid-24{grid-template-columns:repeat(24, 1fr);}
+    .row.xs-grid-32{grid-template-columns:repeat(32, 1fr);}
+    .row.xs-grid-40{grid-template-columns:repeat(40, 1fr);}
+    .row.xs-grid-48{grid-template-columns:repeat(48, 1fr);}
+    .row.xs-grid-80{grid-template-columns:repeat(80, 1fr);}
+    .row.xs-grid-100{grid-template-columns:repeat(100, 1fr);}
+    
+    /* Grid presets */
+    .row.xs-grid-2-8{grid-template-columns: 2fr 8fr;}
+    .row.xs-grid-8-2{grid-template-columns: 8fr 2fr;}
+    .row.xs-grid-3-6{grid-template-columns: 3fr 6fr;}
+    .row.xs-grid-6-3{grid-template-columns: 6fr 3fr;}
+    .row.xs-grid-3-7{grid-template-columns: 3fr 7fr;}
+    .row.xs-grid-7-3{grid-template-columns: 7fr 3fr;}
+    .row.xs-grid-4-6{grid-template-columns: 4fr 6fr;}
+    .row.xs-grid-6-4{grid-template-columns: 6fr 4fr;}
+    .row.xs-grid-1-3-1{grid-template-columns: 1fr 3fr 1fr;}
+    .row.xs-grid-2-4-2{grid-template-columns: 2fr 4fr 2fr;}
+    .row.xs-grid-4-2-4{grid-template-columns: 4fr 2fr 4fr;}
+    
+    /* Spaltenbreiten individuell bestimmen */
+    .row .col-xs-1{grid-column: span 1;}
+    .row .col-xs-2{grid-column: span 2;}
+    .row .col-xs-3{grid-column: span 3;}
+    .row .col-xs-4{grid-column: span 4;}
+    .row .col-xs-5{grid-column: span 5;}
+    .row .col-xs-6{grid-column: span 6;}
+    .row .col-xs-7{grid-column: span 7;}
+    .row .col-xs-8{grid-column: span 8;}
+    .row .col-xs-9{grid-column: span 9;}
+    .row .col-xs-10{grid-column: span 10;}
+    .row .col-xs-12{grid-column: span 12;}
+    
+}

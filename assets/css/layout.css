@@ -1,0 +1,65 @@
+.full-width {
+    width : 100%;
+}
+
+.w-auto,
+.auto-width {
+    width : auto;
+}
+
+.h-auto,
+.auto-height {
+    height : auto;
+}
+
+.mx-auto {
+    margin-left  : auto !important;
+    margin-right : auto !important;
+}
+
+/* Containers */
+
+.container,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xs {
+    margin    : 0 auto;
+    max-width : 100%;
+}
+
+.container {
+    width : var(--container-width);
+}
+
+.container-xxl {
+    width : 1320px;
+}
+
+.container-xl {
+    max-width : 1320px;
+}
+
+.container-lg {
+    max-width : 1140px;
+}
+
+.container-md {
+    max-width : 960px;
+}
+
+.container-sm {
+    max-width : 720px;
+}
+
+.container-xs {
+    max-width : 540px;
+}
+
+.container-fluid,
+.container-full-width {
+    width  : 100%;
+    margin : 0 auto;
+}

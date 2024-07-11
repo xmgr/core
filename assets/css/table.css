@@ -1,0 +1,39 @@
+table {
+    border-collapse  : collapse;
+    width            : 100%;
+    background-color : var(--color-white);
+}
+
+table, table tr, table tr th, table tr td {
+    border : var(--default-border);
+}
+
+table tr td, table tr th {
+    padding : var(--table-cell-padding);
+}
+
+table.table-sm tr td, table.table-sm tr th {
+    padding   : var(--table-cell-padding-sm);
+    font-size : var(--font-size-sm);
+}
+
+table.table-xs tr td, table.table-xs tr th {
+    padding   : var(--table-cell-padding-xs);
+    font-size : var(--font-size-xs);
+}
+
+table thead th, table thead td {
+    font-weight : var(--table-head-font-weight);
+}
+
+table tfoot th, table tfoot td {
+    font-weight : var(--table-foot-font-weight);
+}
+
+table.table-striped tbody tr:nth-child(odd) td {
+    background-color : var(--color-light-gray);
+}
+
+table.table-striped-even tbody tr:nth-child(even) td {
+    background-color : var(--color-light-gray);
+}

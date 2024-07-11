@@ -1,0 +1,123 @@
+/* CSS for boxes, popups, tooltips, badges, alerts, ... */
+
+.alert {
+    display          : block;
+    margin-top       : 1rem;
+    margin-bottom    : 1rem;
+    padding          : 0.75rem 1.25rem;
+    background-color : var(--color-white);
+    color            : var(--color-dark);
+    border           : 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alert.small{
+    padding          : 0.5rem 0.75rem;
+}
+
+.alert.alert-primary {
+    background-color : var(--color-primary);
+    color            : var(--color-white);
+}
+
+.alert.alert-secondary {
+    background-color : var(--color-secondary);
+    color            : var(--color-white);
+}
+
+.alert.alert-tertiary {
+    background-color : var(--color-tertiary);
+    color            : var(--color-white);
+}
+
+.alert.alert-dark {
+    background-color : var(--color-very-dark-gray);
+    color            : var(--color-light-gray);
+}
+
+.alert.alert-light {
+    background-color : var(--color-light-gray);
+    color            : var(--color-very-dark-gray);
+}
+
+.alert.alert-info {
+    background-color : var(--color-info);
+    color            : var(--color-white);
+}
+
+.alert.alert-success {
+    background-color : var(--color-success);
+    color            : var(--color-white);
+}
+
+.alert.alert-error,
+.alert.alert-danger {
+    background-color : var(--color-danger);
+    color            : var(--color-white);
+}
+
+.alert.alert-warning {
+    background-color : var(--color-warning);
+    color            : var(--color-white);
+}
+
+/* Badges */
+
+.badge {
+    display          : inline-block;
+    white-space      : nowrap;
+    text-align       : center;
+    padding          : 0.25em 0.5em;
+    font-size        : 0.7em;
+    line-height      : 1;
+    vertical-align   : baseline;
+    background-color : rgba(0, 0, 0, 0.75);
+    color            : var(--color-white);
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+    display          : flex;
+    flex-wrap        : wrap;
+    padding          : 0.75rem 1rem;
+    margin-bottom    : 1rem;
+    list-style       : none;
+    background-color : var(--color-light-gray);
+}
+
+.breadcrumb li:not(:first-child):before {
+    display      : inline-block;
+    content      : '/';
+    margin-left  : 0.5rem;
+    margin-right : 0.5rem;
+}
+
+/* Cards */
+
+.card {
+    /* @todo implement */
+}
+
+/* Modals */
+
+.modal {
+    position         : fixed;
+    top              : 0;
+    left             : 0;
+    z-index          : 1000;
+    width            : 100%;
+    height           : 100%;
+    overflow-x       : hidden;
+    overflow-y       : auto;
+    outline          : 0;
+    background-color : rgba(0, 0, 0, 0.5);
+    backdrop-filter  : blur(2px);
+    display          : none;
+}
+
+.modal .dialog {
+    max-width        : 100%;
+    width            : 600px;
+    margin           : 2rem auto;
+    background-color : var(--color-white);
+}

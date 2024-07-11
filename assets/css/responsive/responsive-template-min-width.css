@@ -1,0 +1,23 @@
+@media all and (min-width : 1400px) {
+    /* xxl */
+}
+
+@media all and (min-width : 1200px) {
+    /* xl */
+}
+
+@media all and (min-width : 992px) {
+    /* lg */
+}
+
+@media all and (min-width : 768px) {
+    /* md */
+}
+
+@media all and (min-width : 576px) {
+    /* sm */
+}
+
+@media all and (max-width : 576px) {
+    /* xs */
+}

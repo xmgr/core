@@ -1,0 +1,34 @@
+{
+    "name": "xmgr/core",
+    "type": "library",
+    "version": "1.0",
+    "description": "A small micro framework which provides basic features.",
+    "keywords": [
+        "xmgr",
+        "framework",
+        "library",
+        "microframework"
+    ],
+    "homepage": "https://xmgr.de/",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-intl": "*",
+        "ext-ctype": "*",
+        "ext-pdo": "*",
+        "ext-bcmath": "*",
+        "ext-iconv": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xmgr\\": "src/"
+        },
+        "files": [
+            "load.php"
+        ]
+    }
+}
