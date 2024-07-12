@@ -32,8 +32,10 @@
         
         protected string $method = 'GET';
         
-        protected string $body       = '';
-        protected array  $postfields = [];
+        protected string $body              = '';
+        protected array  $postfields        = [];
+        protected string $basicAuthUsername = '';
+        protected string $basicAuthPassword = '';
         
         /**
          * Constructs a new instance of the class.
@@ -515,6 +517,21 @@
         }
         
         /**
+         * Sets the basic authentication credentials for the cURL request.
+         *
+         * @param string $username The username for basic authentication.
+         * @param string $password The password for basic authentication.
+         *
+         * @return static Returns an instance of the class with the set basic authentication credentials.
+         */
+        public function basicAuth(string $username, string $password): static {
+            $this->basicAuthUsername = $username;
+            $this->basicAuthPassword = $password;
+            
+            return $this;
+        }
+        
+        /**
          * Executes an HTTP request and returns the response.
          *
          * @param string|null $url     The URL to request (optional). If provided, it will update the instance URL.
@@ -546,7 +563,16 @@
             if ($this->method === 'POST' && $this->postfields) {
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $this->postfields);
             }
+            
+            # Basic auth
+            if ($this->basicAuthUsername !== '' && $this->basicAuthPassword !== '') {
+                $this->option(CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+                $this->option(CURLOPT_USERPWD, $this->basicAuthUsername . ':' . $this->basicAuthPassword);
+            }
+            
+            # Set options
             curl_setopt_array($ch, $this->curlOptions);
+            
             $response = curl_exec($ch);
             $result   = new Response($this->url, $this->curlOptions, $response, curl_getinfo($ch), curl_errno($ch), curl_error($ch));
             curl_close($ch);

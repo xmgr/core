@@ -43,15 +43,14 @@
         /**
          * Creates and returns a new instance of the class.
          *
-         * @param string $url          The URL to request.
-         * @param array  $assocHeaders An associative array of HTTP headers.
-         * @param string $method       The HTTP method to use (default is 'GET').
+         * @param string $url     The URL to request.
+         * @param array  $headers An associative array of HTTP headers.
+         * @param string $method  The HTTP method to use (default is 'GET').
          *
          * @return Curl The newly created instance of the class.
          */
-        public static function request(string $url, array $assocHeaders, string $method = 'GET'): Curl {
-            return new Curl($url, $assocHeaders, $method);
+        public static function request(string $url, array $headers = [], string $method = 'GET'): Curl {
+            return new Curl($url, $headers, $method);
         }
         
     }
-    
