@@ -29,6 +29,7 @@
     --color-dark-red2        : #c63527;
     --color-error            : #fd5c63;
     --color-danger           : var(--color-error);
+    --color-red              : #fd5c63;
     --color-red2             : #e56a54;
     --color-red3             : #ff967d;
     
