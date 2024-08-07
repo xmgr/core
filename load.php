@@ -69,3 +69,5 @@
         AssetCompiler::compileCss(AssetCompiler::DEFAULT_CSS, 'xmgr-ui.min');
         AssetCompiler::compileJs(AssetCompiler::DEFAULT_JS, 'xmgr-ui.min');
     }
+    
+    /* @var string $content */

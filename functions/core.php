@@ -1044,7 +1044,7 @@
         }
         
         # Handle JSON string
-        return (json_validate($json) ? json_decode((string)$json, $assoc) : []) ?: [];
+        return (json_validate($json) ? (array)json_decode((string)$json, $assoc) : []) ?: [];
     }
     
     
