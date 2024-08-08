@@ -24,13 +24,12 @@ function $(selector) {
     /**
      * Checks if an element has a specific class.
      *
-     * @param {Element} element - The element to check.
-     * @param {string} className - The class name to be checked.
      * @returns {boolean} - True if the element has the class, otherwise false.
+     * @param class_name
      */
     elements.hasClass = function (class_name) {
         let class_list = classlist(class_name);
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             let el = this[i];
             for (current_class_name of class_list) {
                 if (el.classList.contains(class_name)) {
@@ -44,12 +43,12 @@ function $(selector) {
     /**
      * Adds one or more CSS classes to the elements in the collection.
      *
-     * @param {String} className - The CSS class(es) to add.
      * @returns {Object} - The elements collection after adding the CSS class(es).
+     * @param class_name
      */
     elements.addClass = function (class_name) {
         let class_list = classlist(class_name);
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             let el = this[i];
             for (current_class_name of class_list) {
                 el.classList.add(current_class_name);
@@ -60,12 +59,11 @@ function $(selector) {
     /**
      * Toggles the specified CSS class on each element in the given collection of elements.
      *
-     * @param {Array.<Element>} elements - The collection of elements to toggle the class on.
-     * @param {string} className - The CSS class name to toggle on each element.
+     * @param class_name
      */
     elements.toggleClass = function (class_name) {
         let class_list = classlist(class_name);
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             let el = this[i];
             for (current_class_name of class_list) {
                 el.classList.toggle(current_class_name);
@@ -77,13 +75,12 @@ function $(selector) {
     /**
      * Removes the specified CSS class(es) from all elements in the given collection.
      *
-     * @param {Array.<Element>} elements - The collection of elements to remove class(es) from.
-     * @param {string|string[]} classNames - The CSS class(es) to remove.
      * @returns {void}
+     * @param class_name
      */
     elements.removeClass = function (class_name) {
         let class_list = classlist(class_name);
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             let el = this[i];
             for (current_class_name of class_list) {
                 el.classList.remove(current_class_name);
@@ -91,12 +88,9 @@ function $(selector) {
         }
     }
     
-    
     /**
      * Removes all occurrences of specified elements from the array.
      *
-     * @param {Array} array - The array to be modified.
-     * @param {...*} elements - The elements to be removed.
      * @returns {Array} - The modified array.
      *
      * @example
@@ -105,7 +99,7 @@ function $(selector) {
      * console.log(array); // [1, 4]
      */
     elements.remove = function () {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             if (this[i].parentNode) {
                 this[i].parentNode.removeChild(this[i]);
             }
@@ -134,7 +128,7 @@ function $(selector) {
      * @returns {Object} - The elements collection after being shown
      */
     elements.show = function () {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             this[i].style.display = "";
         }
         return this;
@@ -146,7 +140,7 @@ function $(selector) {
      * @returns {Object} - The elements collection after being hidden
      */
     elements.hide = function () {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             this[i].style.display = "none";
         }
         return this;
@@ -154,7 +148,7 @@ function $(selector) {
     
     
     elements.toggle = function () {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             if (this[i].style.display === "none") {
                 this[i].style.display = "";
             } else {
@@ -168,7 +162,7 @@ function $(selector) {
     elements.text = function (content) {
         if (content !== undefined) {
             // Set the text of each element
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 this[i].textContent = content;
             }
             return this;
@@ -181,7 +175,7 @@ function $(selector) {
     elements.html = function (html) {
         if (html !== undefined) {
             // Set the HTML of each element
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 this[i].innerHTML = html;
             }
             return this;
@@ -194,11 +188,10 @@ function $(selector) {
     /**
      * Iterates over each element in the given array.
      *
-     * @param {Array} elements - The array of elements to iterate over.
      * @param {function} callback - The function to be executed for each element.
      */
     elements.each = function (callback) {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             callback.call(this[i], i, this[i]);
         }
         return this;
@@ -208,13 +201,13 @@ function $(selector) {
     /**
      * Retrieves element value
      *
-     * @param {Array} elements - An object containing DOM elements.
      * @return {Array} - An array containing the values of the elements.
+     * @param value
      */
     elements.val = function (value) {
         if (value !== undefined) {
             // Set the value of each element
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 if (this[i].value !== undefined) {
                     this[i].value = value;
                 }
@@ -228,7 +221,7 @@ function $(selector) {
     
     elements.attr = function (attr_name, attr_value) {
         if (attr_value !== undefined) {
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 this[i].setAttribute(attr_name, attr_value);
             }
             return this;
@@ -238,7 +231,7 @@ function $(selector) {
     };
     
     elements.toggleAttr = function (attr_name) {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             if (this[i].hasAttribute(attr_name)) {
                 this[i].removeAttribute(attr_name);
             } else {
@@ -251,7 +244,7 @@ function $(selector) {
     elements.prop = function (propName, propValue) {
         if (propValue !== undefined) {
             // Set the property value of each element
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 if (this[i][propName] !== undefined) {
                     this[i][propName] = propValue;
                 }
@@ -266,7 +259,7 @@ function $(selector) {
     elements.scrollTop = function (value) {
         if (value !== undefined) {
             // Set the scrollTop of each element
-            for (var i = 0; i < this.length; i++) {
+            for (let i = 0; i < this.length; i++) {
                 this[i].scrollTop = value;
             }
         } else {
@@ -279,13 +272,11 @@ function $(selector) {
     /**
      * Attaches an event handler to the specified elements.
      *
-     * @param {(HTMLElement|HTMLCollection|NodeList)} elements - The elements to attach the event handler to.
-     * @param {string} event - The name of the event to listen for.
-     * @param {Function} handler - The function to be called when the event is triggered.
-     * @param {boolean} [useCapture=false] - Specifies whether the event should be captured during the event propagation.
+     * @param eventName
+     * @param callback
      */
     elements.on = function (eventName, callback) {
-        for (var i = 0; i < this.length; i++) {
+        for (let i = 0; i < this.length; i++) {
             this[i].addEventListener(eventName, callback);
         }
         return this;
@@ -327,6 +318,7 @@ $.gettext = async function (url) {
     return await response.text();
 }
 
+
 $('form.ajax').on('submit', function (e) {
     e.preventDefault();
     let url = $(this).attr('action') || window.location.pathname;
@@ -343,7 +335,4 @@ $('form.ajax').on('submit', function (e) {
 
 $(document).ready(function () {
     console.log("- document ready -");
-});
-
-$('.test--toggle').on('click', function () {
 });
