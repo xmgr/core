@@ -184,6 +184,24 @@
         }
         
         /**
+         * Checks if the current request is a GET request.
+         *
+         * @return bool Returns true if the current request is a GET request, false otherwise.
+         */
+        public static function isGetRequest(): bool {
+            return self::methodIs('GET');
+        }
+        
+        /**
+         * Checks if the current request is a POST request.
+         *
+         * @return bool Returns true if the current request is a POST request, false otherwise.
+         */
+        public static function isPostRequest(): bool {
+            return self::methodIs('POST');
+        }
+        
+        /**
          * Get the HTTP method of the current request.
          *
          * @return string The HTTP method of the current request. It will return 'GET' if the 'REQUEST_METHOD' key is
