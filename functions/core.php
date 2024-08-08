@@ -1334,7 +1334,7 @@
      * @throws Exception
      */
     function str_passwd(int $length = 32, string $additional_characters = ''): string {
-        $length = max(8, abs($length)) - 2;
+        $length = max(6, abs($length)) - 2;
         # We want the first and last character of the password to be a non-ambiguous letter or digit
         static $nac = 'aAbBcCdDeEfFgGhHijJkKLmMnNopPqQrRsStTuUvVwWxXyYzZ';
         static $nnum = '23456789';
